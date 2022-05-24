@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      API_KEY: $API_KEY
+      API_HASH: $API_HASH
+      BOT_TOKEN: $BOT_TOKEN
+      STRING_SESSION: $STRING_SESSION  # defaults to None
+      BOTLOG_CHATID: $BOTLOG_CHATID  # defaults to None
+      DATABASE_URL: $DATABASE_URL  # defaults to None
+      PM_AUTO_BAN: $PM_AUTO_BAN  # defaults to None
